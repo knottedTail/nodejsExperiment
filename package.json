@@ -5,5 +5,8 @@
   "repository": "git@github.com:knottedTail/nodejsExperiment.git",
   "author": "<philip94@snu.ac.kr>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }

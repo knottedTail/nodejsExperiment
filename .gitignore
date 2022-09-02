@@ -1,4 +1,5 @@
 .gitignore  # itself
 
-package-lock.json
 node_modules
+
+# DO NOT INCLUDE yarn.lock
