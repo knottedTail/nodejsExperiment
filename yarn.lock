@@ -261,6 +261,11 @@ ms@2.1.3:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
+n@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/n/-/n-9.0.0.tgz#0f57f3567d4e6721cbd62eec7972875fa69dfe84"
+  integrity sha512-OZie4DuAZASChFZnIkf5BYEYEhMe6utRTAWM+98aS6N0pRLNxcDEMwxSsy7is98zTlDICcQB2dym+u10pEOtBg==
+
 negotiator@0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
