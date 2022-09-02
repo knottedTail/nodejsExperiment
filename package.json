@@ -1,0 +1,9 @@
+{
+  "name": "nodejsExperiment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:knottedTail/nodejsExperiment.git",
+  "author": "<philip94@snu.ac.kr>",
+  "license": "MIT",
+  "private": false
+}
