@@ -148,19 +148,80 @@ yarn add JSONStream
 
 위의 세팅으로 ./public 에 index.html을 배치하는 것으로 종료
 
-# Yarn + Netlify
-* pacakge manager로써 Netlify은 Yarn을 지원 [Link](https://www.netlify.com/blog/2016/11/01/yarn-support-on-netlify/)
-
-* 자동으로 yarn.lock을 찾아 package를 설치한다: Node.js를 쓰는 셈이 아닌 듯?
-
-* parcel 을 이용해 간단한 static site를 distribution 형태로 만들 수 있음
-```
-yarn add parcel-bundler --dev
-```
-로 설치 (--dev: 개발용 dependency에만 추가, 서버에는 올라가지 않음)
-
 # Node.js , npm, yarn 재정리
 
 * Node.js JavsScript 런타임 (주로 서버 위)
 
 * JavaScript는 스크립트 언어로서, 특정 프로그램 안에서만 동작한다 e.g. 웹 브라우저
+
+# Yarn + Netlify
+* pacakge manager로써 Netlify은 Yarn을 지원 [Link](https://www.netlify.com/blog/2016/11/01/yarn-support-on-netlify/)
+
+* 자동으로 yarn.lock을 찾아 package를 설치한다: Node.js를 쓰는 셈이 아닌 듯?
+
+* parcel 을 이용해 간단한 static site를 distribution 형태로 만들 수 있음 [Link](https://slogga.tistory.com/105)
+```
+yarn add parcel-bundler --dev
+```
+로 설치 (--dev: 개발용 dependency에만 추가, 서버에는 올라가지 않음)
+
+.json 파일을 .js 파일로 바꿔 업로드하는 상황 발생
+```
+yarn add parcel-plugin-static-files-copy --dev
+```
+
+설치 후 package.json에서 "staticFiles" 필드 추가 ... 파일만 복사하고 html 파일 내에서는 js로 수정
+
+=> 다른 플러그인 설치
+
+```
+yarn add @parcel/transformer-raw --dev
+```
+root에 .parcelrc 파일 만들기
+```
+// .parcelrc
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.json": ["@parcel/transformer-raw"]
+  }
+}
+```
+이것도 안돼서 webpack 사용해보기
+
+# Webpack + Yarn + Netlify
+
+REF: [Link](https://serzhul.io/JavaScript/learn-webpack-in-under-10minutes/)
+
+필요 dep 설치
+```
+yarn add webpack webpack-cli webpack-dev-server html-webpack-plugin --dev
+```
+
+설정 파일 만들기 /webpack.config.js
+```
+```
+
+## css를 위한
+```
+yarn add css-loader style-loader --dev
+```
+css 파일은 index.html이 아닌 index.js에 불러오기
+
+## 모던 자바스크립트를 위한(브라우저 호환)
+```
+yarn add @babel/core babel-loader @babel/preset-env --dev
+```
+@bable/core: 실제 엔진
+babel-loader: webpack에 필요한 로더
+@babel/preset-env 자바스크립트->ES5 변환
+
+./babel.config.json 만들어서 설정 줘야함
+
+=> ES6 코드를 하위 코드로 자동변환
+
+## 정적 파일 연결
+REF [Link](https://velog.io/@ansalstmd/BundlerWebpack-04.-%EC%A0%95%EC%A0%81-%ED%8C%8C%EC%9D%BC-%EC%97%B0%EA%B2%B0)
+```
+yarn add copy-webpack-plugin --dev
+```
