@@ -1,8 +1,79 @@
 <html>
-<body>
-  <script src="./index.js"></script>
-  It is knotted tails blog! Welcome.
-  태극기가 바람에 펄럭입니다<br/>
-	<img src='public/korea.png'>
-</body>
+	<title>DIAGRAM.SITE</title>
+	<head>
+		<h1 align="center"> -Boundary parabolic representations for knots- </h1> 
+		<link href="css/diagram.css" rel="stylesheet" type="text/css" />
+
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+		  
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+	<div class="search-popup">
+		<h2 class="tt">Search Your Diagrams</h2>
+		<!-- <form action="#" class="search-form" role="search"> -->
+		<form action="#" class="search-form" role="search" onsubmit="return false;">
+			<fieldset>
+				<div class="search-form-con">
+					<!-- <label class="blind" for="#">Search</label> -->
+					<input type="text" name="diagramQuery" placeholder="Enter name of your diagrams">
+					<input type="submit" value="submit" class='search-submit' onclick="test();">
+					<!-- <button type="button" class="search-icon"></button> -->
+					<!-- <button type="button" class="search-submit"></button> -->
+				</div>
+			</fieldset>
+		</form>
+		<button type="button" class="close-btn"></button>
+	</div>
+	<table id="tester" class="display">
+		<thead>
+			<tr>
+				<th>Index</th>
+				<th>Crossing</th>
+				<th>Alternating</th>
+				<!-- <th>Local</th> -->
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<p>
+		<table id="parabolic" class="display" border="1" align="center" text-align="center" margin-top="12000px">
+			<th> Index </th>
+			<th> Name </th>
+			<th> # of Components </th>
+			<th> # of solutions at each components<br>(If #<0, then dim=(-#))</th>
+			<th> Knot Data </th>
+			<tr>
+				<td align="center">1</td>
+				<td align="center"><a href ="diagram/svg/1_3_1.svg">3_1</a></td>
+				<td align="center">1</td>
+				<td align="center">{1}</td>
+				<td align="center"><a href="./data/html/1_3_1.html">html</a>, <a href="./data/pdf/1_3_1.pdf" download>pdf</a>, <a href="./data/json/3_1(1).json" download>json</a></td>
+			</tr>
+			<tr>
+				<td align="center">2</td>
+				<td align="center"><a href ="diagram/svg/2_4_1.svg">4_1</a></td>
+				<td align="center">1</td>
+				<td align="center">{<b>2</b>}</td>
+				<td align="center"><a href="./data/html/2_4_1.html">html</a>, <a href="./data/pdf/2_4_1.pdf" download>pdf</a>, <a href="./data/json/4_1(2).json" download>json</a></td>
+			</tr>
+			<tr>
+				<td align="center">3</td>
+				<td align="center"><a href ="diagram/svg/3_5_1.svg">5_1</a></td>
+				<td align="center">1</td>
+				<td align="center">{2}</td>
+				<td align="center"><a href="./data/html/3_5_1.html">html</a>, <a href="./data/pdf/3_5_1.pdf" download>pdf</a>, <a href="./data/json/5_1(3).json" download>json</a></td>
+			</tr>
+			<tr>
+				<td align="center">4</td>
+				<td align="center"><a href ="diagram/svg/4_5_2.svg">5_2</a></td>
+				<td align="center">1</td>
+				<td align="center">{<b>3</b>}</td>
+				<td align="center"><a href="./data/html/4_5_2.html">html</a>, <a href="./data/pdf/4_5_2.pdf" download>pdf</a>, <a href="./data/json/5_2(4).json" download>json</a></td>
+			</tr>
+	</p>
+	<div align="center"> -- End of the page -- </div>
+	<script src="src/diagram.js"></script>
+	</body>
 </html>

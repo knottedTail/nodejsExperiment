@@ -1,0 +1,303 @@
+{
+	"Index":4,
+	"Name":"5_2",
+	"RolfsenName":"5_2",
+	"DTname":"5a_1",
+	"TunnelNumber":1,
+	"BridgeNumber":"Not implemented",
+	"Hyperbolic":true,
+	"Diagram":{
+		"Scode":"{4, 8, 10, 2, 6}",
+		"Acode":"{3, 5, 1, 2, 4}",
+		"PDcode":[
+			"{1, 5, 2, 4}",
+			"{3, 9, 4, 8}",
+			"{5, 1, 6, 10}",
+			"{7, 3, 8, 2}",
+			"{9, 7, 10, 6}"
+		],
+		"CBtype":"{2, 0}",
+		"ParabolicReps":{
+			"SolvingSeq":[
+				"{2, 5}",
+				[],
+				[
+					"{2, 5, 3, 1}",
+					"{2, 3, 1, 2}",
+					"{5, 2, 4, 2}"
+				],
+				"{5}",
+				"{3}",
+				3
+			],
+			"SolvingSeqIdx":1,
+			"Comps":{
+				"u":{
+					"CheckEq":[
+						"-1 + u^2 - u^3",
+						"u - u^3 + u^4"
+					],
+					"TimingForPrimaryIdeals":8.2651e-2
+				},
+				"v":{
+					"CheckEq":[
+						"-1 + v"
+					],
+					"TimingForPrimaryIdeals":7.176400000000001e-2
+				},
+				"PrimaryIdeals":[
+					{
+						"IdealName":"J5_2_0",
+						"Generators":[
+							"1 - u^2 + u^3"
+						],
+						"VariableOrder":[
+							"u"
+						],
+						"Characteristic":0,
+						"KnownGroebner":[],
+						"Status":[
+							"vCompNormalize"
+						],
+						"MonomialOrder":"lex",
+						"IsHomogeneous":false,
+						"IsZeroDim":true,
+						"IdealDimension":0,
+						"Timings":{
+							"TimingGroebner":2.4575e-2,
+							"TimingZeroDimVars":1.1538e-2,
+							"TimingmagmaVCompNormalize":1.2589999999999999e-2,
+							"TimingNumberOfSols":1.2837000000000001e-2,
+							"TimingIsRadical":9.699999999999999e-4,
+							"TimingArcColoring":2.5514000000000002e-2,
+							"TimingObstruction":8.680000000000002e-4,
+							"TimingComplexVolumeN":1.343193,
+							"TimingaCuspShapeN":6.201e-3,
+							"TiminguValues":0.31769,
+							"TiminguPolysN":3.33e-4,
+							"TiminguPolys":0.401414,
+							"TimingaCuspShape":8.949700000000002e-2,
+							"TimingRepresentationsN":1.5964e-2,
+							"TiminguValues_ij":2.6163e-2,
+							"TiminguPoly_ij":0.208777,
+							"TiminguPolys_ij_N":2.8500000000000004e-4
+						},
+						"ZeroDimensionalVars":[
+							"u"
+						],
+						"NumberOfSols":3,
+						"IsRadical":true,
+						"ArcColoring":[
+							[
+								"1 - u^2",
+								"1 + u - u^2"
+							],
+							"{1, 0}",
+							[
+								1,
+								"u^2"
+							],
+							[
+								"u",
+								"u"
+							],
+							[
+								0,
+								"u"
+							]
+						],
+						"Obstruction":-1,
+						"ComplexVolumeN":[
+							"3.02413 - 2.82812*I",
+							"3.02413 + 2.82812*I",
+							-1.11345
+						],
+						"uPolysN":[
+							"1 + 2*u + u^2 + u^3",
+							"1 - u^2 + u^3",
+							"1 + 2*u + u^2 + u^3",
+							"1 - u^2 + u^3",
+							"1 + 2*u + u^2 + u^3"
+						],
+						"uPolys":[
+							"1 + 2*u + u^2 + u^3",
+							"1 - u^2 + u^3",
+							"1 + 2*u + u^2 + u^3",
+							"1 - u^2 + u^3",
+							"1 + 2*u + u^2 + u^3"
+						],
+						"aCuspShape":"-6 + 4*u",
+						"RepresentationsN":[
+							[
+								"u->0.877439 + 0.744862 I"
+							],
+							[
+								"u->0.877439 - 0.744862 I"
+							],
+							[
+								"u->-0.754878"
+							]
+						],
+						"Epsilon":1.48972,
+						"uPolys_ij":[
+							"1 - u^2 + u^3",
+							"1 + 2*u + u^2 + u^3",
+							"1 + 2*u - 3*u^2 + u^3"
+						],
+						"GeometricComponent":"{1, 2}",
+						"uPolys_ij_N":[
+							"1 - u^2 + u^3",
+							"1 + 2*u + u^2 + u^3",
+							"1 + 2*u - 3*u^2 + u^3"
+						],
+						"Multiplicity":1,
+						"ij_list":[
+							[
+								"{2, 4}",
+								"{2, 5}",
+								"{3, 5}"
+							],
+							[
+								"{1, 3}",
+								"{1, 4}",
+								"{2, 3}",
+								"{4, 5}"
+							],
+							[
+								"{1, 2}",
+								"{1, 5}",
+								"{3, 4}"
+							]
+						],
+						"SortedReprnIndices":"{2, 1, 3}",
+						"aCuspShapeN":[
+							"-2.4902446675066144799`4.95757905065386 + 2.9794470664789769464`5.035472705916891*I",
+							"-2.4902446675066144799`4.95757905065386 - 2.9794470664789769464`5.035472705916891*I",
+							-9.0195
+						],
+						"Abelian":false
+					},
+					{
+						"IdealName":"abJ5_2_1",
+						"Generators":[
+							"-1 + v"
+						],
+						"VariableOrder":[
+							"v"
+						],
+						"Characteristic":0,
+						"KnownGroebner":[],
+						"Status":[
+							"vCompNormalize"
+						],
+						"MonomialOrder":"lex",
+						"IsHomogeneous":false,
+						"IsZeroDim":true,
+						"IdealDimension":0,
+						"Timings":{
+							"TimingGroebner":2.3103e-2,
+							"TimingZeroDimVars":1.1716e-2,
+							"TimingmagmaVCompNormalize":1.2653000000000001e-2,
+							"TimingNumberOfSols":1.2709999999999999e-2,
+							"TimingIsRadical":1.091e-3,
+							"TimingArcColoring":2.3812000000000003e-2,
+							"TimingObstruction":1.9700000000000002e-4,
+							"TimingComplexVolumeN":0.214226,
+							"TimingaCuspShapeN":2.2730000000000003e-3,
+							"TiminguValues":0.307662,
+							"TiminguPolysN":3.6e-5,
+							"TiminguPolys":0.392944,
+							"TimingaCuspShape":8.3404e-2,
+							"TimingRepresentationsN":1.4015e-2,
+							"TiminguValues_ij":2.5363000000000004e-2,
+							"TiminguPoly_ij":7.958e-2,
+							"TiminguPolys_ij_N":2.6000000000000002e-5
+						},
+						"ZeroDimensionalVars":[
+							"v"
+						],
+						"NumberOfSols":1,
+						"IsRadical":true,
+						"ArcColoring":[
+							"{1, 0}",
+							"{1, 0}",
+							"{1, 0}",
+							"{1, 0}",
+							"{1, 0}"
+						],
+						"Obstruction":1,
+						"ComplexVolumeN":"{0}",
+						"uPolysN":[
+							"u",
+							"u",
+							"u",
+							"u",
+							"u"
+						],
+						"uPolys":[
+							"u",
+							"u",
+							"u",
+							"u",
+							"u"
+						],
+						"aCuspShape":0,
+						"RepresentationsN":[
+							[
+								"v->1."
+							]
+						],
+						"Epsilon":"Infinity",
+						"uPolys_ij":[
+							"u"
+						],
+						"GeometricComponent":0,
+						"uPolys_ij_N":[
+							"u"
+						],
+						"Multiplicity":1,
+						"ij_list":[
+							[
+								"{1, 2}",
+								"{1, 3}",
+								"{1, 4}",
+								"{1, 5}",
+								"{2, 3}",
+								"{2, 4}",
+								"{2, 5}",
+								"{3, 4}",
+								"{3, 5}",
+								"{4, 5}"
+							]
+						],
+						"SortedReprnIndices":"{1}",
+						"aCuspShapeN":"{0}",
+						"Abelian":true
+					}
+				]
+			},
+			"uPolyC":[
+				"1 + 2*u + u^2 + u^3",
+				"1 - u^2 + u^3",
+				"1 + 2*u + u^2 + u^3",
+				"1 - u^2 + u^3",
+				"1 + 2*u + u^2 + u^3"
+			],
+			"RileyPolyC":[
+				"-1 + 2*y + 3*y^2 + y^3",
+				"-1 + 2*y - y^2 + y^3",
+				"-1 + 2*y + 3*y^2 + y^3",
+				"-1 + 2*y - y^2 + y^3",
+				"-1 + 2*y + 3*y^2 + y^3"
+			]
+		},
+		"GeometricRepresentation":[
+			2.82812,
+			[
+				"J5_2_0",
+				1,
+				"{1, 2}"
+			]
+		]
+	}
+}

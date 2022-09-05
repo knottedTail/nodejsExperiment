@@ -1,3 +1,5 @@
+import '../css/diagram.css'
+
 console.log("Temporary cats")
 
 // const express = require("express");
