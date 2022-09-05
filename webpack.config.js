@@ -3,9 +3,16 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path')
 
 module.exports = {
-    entry: { index: path.resolve(__dirname, 'src', 'index.js') },
+    entry: { 
+        "index": path.resolve(__dirname, 'src', 'index.js'),
+        "diagram": path.resolve(__dirname, 'src', 'diagram.js')
+    },
 
-    output: { path: path.resolve(__dirname, 'build'), filename: 'main.js' },
+    output: { 
+        path: path.resolve(__dirname, 'build'), 
+        filename: '[name].js',
+        library: '[name]'
+     },
     // devServer: {
     //     host:'localhost'
     // },
@@ -15,7 +22,7 @@ module.exports = {
     // },    
     plugins: [
         new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, 'index.html')
+            template: path.resolve(__dirname, 'public', 'index.html')
         }),
         new CopyPlugin({
             patterns : [
@@ -41,5 +48,9 @@ module.exports = {
         hints: false,
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
+    },
+
+    externals: {
+        jquery: 'jQuery',
     }
 }

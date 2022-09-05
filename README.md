@@ -236,3 +236,36 @@ package.json 에 아래 코드 추가
   "os": false
 }
 ```
+
+## .html 파일에서 함수 불러오기가 안되는 오류
+REF: [LINK](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=magnking&logNo=220962927720)
+[Related](https://velog.io/@uoayop/WebPack-function-is-not-defined)
+* webpack 에서 function을 글로벌에 넣지 않기 때문
+
+```
+functon abc(){}
+```
+대신
+```
+window.abc = function(){}
+```
+꼴로 바꾸어주는 것으로 해결 가능
+
+### jquery에 대한 처리
+
+설치
+```
+yarn add jquery
+```
+
+index.js에 import 구문 추가
+```
+import $ from 'jquery';
+```
+
+webpack.config.js - module.exports 에 속성 추가
+```
+    externals: {
+        jquery: 'jQuery',
+    }
+```

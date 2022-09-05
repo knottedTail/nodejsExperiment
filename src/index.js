@@ -1,6 +1,11 @@
-import '/css/diagram.css'
+import '/css/diagram.css';
+// import diagram from "/src/diagram.js";
+// import {rearrangeTable} from "/src/diagram.js";
 console.log("Temporary cats")
 
+
+
+  
 // const fs = require('fs');
 // const JSONStream = require('JSONStream');
 
