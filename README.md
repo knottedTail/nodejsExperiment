@@ -225,3 +225,14 @@ REF [Link](https://velog.io/@ansalstmd/BundlerWebpack-04.-%EC%A0%95%EC%A0%81-%ED
 ```
 yarn add copy-webpack-plugin --dev
 ```
+
+## fs 모듈 관련 오류
+
+package.json 에 아래 코드 추가
+```
+"browser": {
+  "fs": false,
+  "path": false,
+  "os": false
+}
+```
