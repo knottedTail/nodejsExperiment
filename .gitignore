@@ -1,5 +1,6 @@
-.gitignore  # itself
+# .gitignore  # itself
 
 node_modules
+build/
 
 # DO NOT INCLUDE yarn.lock
