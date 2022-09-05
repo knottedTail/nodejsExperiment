@@ -139,3 +139,28 @@ stream-json 대신 다운로드 수가 많은 JSONStream 으로 대체
 yarn add JSONStream
 ```
 
+# Single page 배포하기 (Netlify)
+
+* Build setting
+    * Base directory: public
+    * Build command: None
+    * Publish directory: None
+
+위의 세팅으로 ./public 에 index.html을 배치하는 것으로 종료
+
+# Yarn + Netlify
+* pacakge manager로써 Netlify은 Yarn을 지원 [Link](https://www.netlify.com/blog/2016/11/01/yarn-support-on-netlify/)
+
+* 자동으로 yarn.lock을 찾아 package를 설치한다: Node.js를 쓰는 셈이 아닌 듯?
+
+* parcel 을 이용해 간단한 static site를 distribution 형태로 만들 수 있음
+```
+yarn add parcel-bundler --dev
+```
+로 설치 (--dev: 개발용 dependency에만 추가, 서버에는 올라가지 않음)
+
+# Node.js , npm, yarn 재정리
+
+* Node.js JavsScript 런타임 (주로 서버 위)
+
+* JavaScript는 스크립트 언어로서, 특정 프로그램 안에서만 동작한다 e.g. 웹 브라우저
